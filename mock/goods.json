@@ -1,0 +1,24 @@
+{
+	"status":"0",
+	"msg":"",
+	"result":[
+   { 
+    "productid":"100001",
+    "productname":"one plus",
+    "productprice":2499,
+    "productimg":"1.jpg"
+    },
+    { 
+    "productid":"100002",
+    "productname":"applewatch",
+    "productprice":1499,
+    "productimg":"2.jpg"
+    },
+    { 
+    "productid":"100003",
+    "productname":"apple",
+    "productprice":4499,
+    "productimg":"3.jpg"
+    }
+	]
+}

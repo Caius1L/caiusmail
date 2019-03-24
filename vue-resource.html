@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Examples</title>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script src="node_modules/vue-resource/dist/vue-resource.js"></script>
+</head>
+<body>
+    <div id="app" class="container">
+    	<h1>vue-resource teach</h1>
+    	<a href="javascript" class="btn btn-primary" @click="gethand">get</a>
+    	<a href="javascript" class="btn btn-primary">post</a>
+    	<a href="javascript" class="btn btn-primary">jsonp</a>
+    </div>
+    <script>
+    	new Vue({
+    		el:"#app",
+    		data:{
+    			msg:''
+    		},
+    		methods:{
+                gethand(){
+                    this.$http.get("package.json",{
+                    	params:{
+                    		useId:"101"
+                    	},
+                    	headers:{
+                              token:"abcd"
+                    	}
+                    }).then(res=>{
+                    	this.msg=res.data;
+                    })
+                }
+    		}
+    	})
+    </script>
+</body>
+</html>
